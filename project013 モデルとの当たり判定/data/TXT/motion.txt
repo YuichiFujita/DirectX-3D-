@@ -1,0 +1,118 @@
+#==============================================================================
+#
+# 『モーションビューワ』スクリプトファイル [motion.txt]
+# Author : AKIRA TANAKA
+#
+#==============================================================================
+#------------------------------------------------------------------------------
+# キャラクター情報
+#------------------------------------------------------------------------------
+CHARACTERSET
+
+	PARTSSET						# [ 0] 体
+		INDEX = 0
+		PARENT = -1					# (親) NULL
+		POS = 0.0 34.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 1] 頭
+		INDEX = 1
+		PARENT = 0					# (親) 体
+		POS = 0.0 9.5 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 2] 左腕
+		INDEX = 2
+		PARENT = 0					# (親) 体
+		POS = 6.0 7.2 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 3] 右腕
+		INDEX = 3
+		PARENT = 0					# (親) 体
+		POS = -6.0 7.2 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 4] 左手首
+		INDEX = 4
+		PARENT = 2					# (親) 左腕
+		POS = 10.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 5] 右手首
+		INDEX = 5
+		PARENT = 3					# (親) 右腕
+		POS = -10.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 6] 左手
+		INDEX = 6
+		PARENT = 4					# (親) 左手首
+		POS = 9.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 7] 右手
+		INDEX = 7
+		PARENT = 5					# (親) 右手首
+		POS = -9.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 8] 左足
+		INDEX = 8
+		PARENT = 0					# (親) 体
+		POS = 5.6 -11.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [ 9] 右足
+		INDEX = 9
+		PARENT = 0					# (親) 体
+		POS = -5.6 -11.0 0.0
+		ROT = 0.0 0.0 0.0
+		
+	END_PARTSSET
+	
+	PARTSSET						# [10] 左腿
+		INDEX = 10
+		PARENT = 8					# (親) 左足
+		POS = 1.2 -14.5 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [11] 右腿
+		INDEX = 11
+		PARENT = 9					# (親) 右足
+		POS = -1.2 -14.5 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [12] 左靴
+		INDEX = 12
+		PARENT = 10					# (親) 左腿
+		POS = 0.5 -5.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [13] 右靴
+		INDEX = 13
+		PARENT = 11					# (親) 右腿
+		POS = -0.5 -5.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [14] ナイフ
+		INDEX = 14
+		PARENT = 6					# (親) 右手
+		POS = 2.0 0.6 1.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+END_CHARACTERSET
